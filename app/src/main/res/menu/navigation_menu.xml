@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group
+    android:id="@+id/gp1"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_maths"
+        android:icon="@drawable/maths"
+        android:title="Maths" />
+
+    <item
+        android:id="@+id/nav_physics"
+        android:icon="@drawable/physics"
+        android:title="Physics" />
+
+    <item
+        android:id="@+id/nav_chem"
+        android:icon="@drawable/chem"
+        android:title="Chemistry" />
+
+    <item
+        android:id="@+id/EEE"
+        android:icon="@drawable/lightbulb"
+        android:title="Electronics Electrical" />
+    </group>
+
+    <group
+        android:id="@+id/gp2"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/unitconversion"
+        android:icon="@drawable/unitconversion"
+        android:title="Unit Conversion" />
+        <item
+            android:id="@+id/Scientist"
+            android:icon="@drawable/scientist"
+            android:title="Scientist" />
+
+
+        <item
+        android:id="@+id/favourite"
+        android:icon="@drawable/favourite"
+        android:title="Favourite" />
+</group>
+
+    <group
+        android:id="@+id/gp3"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/Share"
+        android:icon="@drawable/share"
+        android:title="Share" />
+    <item
+        android:id="@+id/Rate"
+        android:icon="@drawable/rate"
+        android:title="Rate" />
+    <item
+        android:id="@+id/ads"
+        android:icon="@drawable/ad"
+        android:title="Remove Ads" />
+    <item
+        android:id="@+id/aboutus"
+        android:icon="@drawable/aboutus"
+        android:title="About Us" />
+   </group>
+</menu>

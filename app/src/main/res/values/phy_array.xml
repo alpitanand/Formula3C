@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phy_name">
+        <item>Kinematics</item>
+        <item>Gravitation</item>
+        <item>Mechanics</item>
+        <item>Hydrostatics and Hydrodynamics</item>
+        <item>Simple harmonics motion</item>
+        <item>Waves</item>
+        <item>Interfernce and diffraction of lights</item>
+        <item>Electomagntic waves</item>
+        <item>Modern Physics</item>
+        <item>Thermal Expansion</item>
+        <item>Thermodynamics</item>
+    </string-array>
+
+
+    <string-array name="phy_descript">
+            <item>Kinematics, Laws of motion, Friction</item>
+            <item>Gravitation</item>
+            <item>Mechnaics of system of particles, Rigid body dynamics, Elasticity</item>
+            <item>Hydrostatics, Hydrodynamics</item>
+            <item>SHM basics</item>
+            <item>Waves ,Doppler effect</item>
+            <item>Huygen\'s principle, Interference, Diffraction, Ploarisation </item>
+            <item>Electromagnetic waves basics</item>
+            <item>Dual nature, Wave matter, Atomic Structure, Atomic nucleus, Atomic energy</item>
+            <item>Measurement of heat and temperature, kinetic theory of gases</item>
+            <item>Thermodynamics, Measurement of Heat and Temperature, Heat transfer</item>
+        </string-array>
+
+<array name="image">
+    <item>@drawable/kinematics</item>
+    <item>@drawable/gravitation</item>
+    <item>@drawable/mechanics</item>
+    <item>@drawable/hydrostatics</item>
+    <item>@drawable/simpleharmonicsmotion</item>
+    <item>@drawable/waves</item>
+    <item>@drawable/interference</item>
+    <item>@drawable/electromagneticwaves</item>
+    <item>@drawable/modernphysics</item>
+    <item>@drawable/thermal</item>
+    <item>@drawable/thermodynamics</item>
+
+</array>
+</resources>

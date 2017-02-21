@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+	<link rel="stylesheet" href="../mathscribe/jqmath-0.4.3.css">
+	
+	<script src="../mathscribe/jquery-1.4.3.min.js"></script>
+	<script src="../mathscribe/jqmath-etc-0.4.6.min.js" charset="utf-8"></script>
+	<!-- <script>M.MathPlayer = false; M.trustHtml = true;</script> -->
+<style>
+    table,th,td{
+        border:1px solid black;
+            border-collapse: collapse;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    </style>
+    </head>
+<body>
+<h1>Mechanics of system of particles</h1>
+<table>
+<tr>
+<th>Term</th>
+<th>Description</th>
+</tr>
+    
+    <tr>
+    <td>Shm</td>
+    <td>Differential equation of SHM is 
+        <math>
+        <mfrac>
+            <mn>d<sup>2</sup>x</mn>
+                <mn>dt<sup>2</sup></mn>
+            </mfrac></math>
+        + ω<sup>2</sup>x = 0</br>
+    Solutions of this equation can  both be sine or cosine functions.We conveniently choose
+    x = Acos(ωt + φ) where A,φ and ω all are constants 
+    </tr>
+    
+    <tr>
+    <td>Amplitude</td>
+    <td>Quantity A is known of SHM which is the magnitude of maximum value of displacement on either sides from the equilibrum position</td></tr>
+    
+    <tr>
+    <td>Time period</td>
+    <td>Time period (T) of SHM the time during whichoscillation repeat itself i.e., repeatsits one cycle of motion and it is given by 
+        <math>
+        <mfrac>
+            <mn>2n</mn>
+            <mn>ω</mn></mfrac></math>
+        where ω is the angular frequency
+        </td></tr>
+    
+    <tr>
+    <td>Frequency</td>
+    <td>Frequency of the SHM is the number of the complete oscillation per unit time i.e., frequency is reciprocal of the time period f=1/T.thus angular frequency ω=2πf</td></tr>
+    
+    <tr>
+    <td>Velocity</td>
+    <td>Velocity of a system executing SHM as a function of time is v = - ωAsin(ωt+φ)</td></tr>
+    
+    <tr>
+    <td>Accelceration</td>
+        <td>Acceleration of particle executing SHM is a = -ω<sup>2</sup>Acos(ωt+φ) so a = -ω<sup>2</sup>x</br>
+    THis shows that acceleration is proportional to the displacement but in opposite direction</td></tr>
+    
+
+<tr>
+<td>Kinetic Energy</td>
+<td>At any time t KE of system in SHM is KE = (1/2)mv<sup>2</sup> = (1/2)mω<Sup>2</Sup>A<sup>2</sup>sin<sup>2</sup>(ωt+φ)
+    which is a function varying periodically in time</td></tr>
+
+
+<tr>
+<td>Potential Energy</td>
+<td>PE of system in SHM at any time t is PE = (1/2)kx<sup>2</sup> = (1/2)mω<Sup>2</Sup>A<sup>2</sup>cos<sup>2</sup>(ωt+φ)</td></tr>
+
+<tr>
+<td>Total Energy</td>
+    <td>Total energy in SHm E = KE+PE = (1/2)mω<Sup>2</Sup>A<sup>2</sup></br>
+    and it remain constant in absence of dissipative forces like frictional forces
+    </td></tr>
+
+<tr>
+<td>Oscillations of a Spring mass system</td>
+<td>In this case particle of mass m oscillates under the influence of hook's law restoring force given by F = -kx where k is the spring constant</br>
+Angular Frequency ω = √(k/m) </br>
+Time period T= 2n√(m/k)
+frequency is = (1/2n)√(k/m)
+Time period of both horizontal and vertical osciallation are same but spring constant have different value for horizontal and vertical motion</td>    
+</tr>
+
+<tr>
+<td>Simple Pendulum</td>
+<td>Motion of simple particle of mass m oscillates under the influenceof hook's law restoring force given by </br>
+w = √(Q/L) and time period T = 2n√(L/q)
+where L is the length of the spring
+Here we notice that period of oscillation is independent of the mass m of the pendulum
+</td></tr>
+
+<tr>
+<td>Compound Pendulum</td>
+<td>Compund pendulum is a rigid body of any shpae capable of oscillating about the horizontal axis passing through it.</br>
+such a pendulum swinging with small angle executes SHM with the time period</br>
+T = 2n√(
+<math>
+<mfrac>
+    <mn>I</mn>
+    <mn>mqL</mn>
+    </mfrac></math>
+)
+where I = moment of inertia of pendulum about the axis of suspension L is the length of the pendulum
+</td></tr>
+
+<tr>
+<td>Damped Oscillation</td>
+<td>SHM which continues indefinately without the loss of the amplitude are called free oscillation or undamped and it is not a real case.</br>
+In real physical systems energy of the oscillator gradully decreases with time and oscillator will eventually come to rest.this happens becuase in actual physical systems, friction (or damping) is always present</br>
+The reduction in amplitude or energy of the oscillator is called damping and oscillation are called damped
+</td></tr>
+
+<tr>
+<td>Forced Oscillation and Response</td>
+<td>Oscillations of a system under the influence of an external periodic force are called forced oscillations</br>
+If frequency of externally applied driving force is equal to the natural frequency of the oscillator resonance is said to occur</td></tr>
+    </table>
+    </body>
+</html>

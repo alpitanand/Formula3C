@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+	<link rel="stylesheet" href="../mathscribe/jqmath-0.4.3.css">
+	
+	<script src="../mathscribe/jquery-1.4.3.min.js"></script>
+	<script src="../mathscribe/jqmath-etc-0.4.6.min.js" charset="utf-8"></script>
+	<!-- <script>M.MathPlayer = false; M.trustHtml = true;</script> -->
+<style>
+    table,th,td{
+        border:1px solid black;
+            border-collapse: collapse;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    </style>
+    </head>
+<body>
+<h1>Mechanics of system of particles</h1>
+<table>
+<tr>
+<th>Term</th>
+<th>Description</th>
+</tr>
+    
+    
+    <tr>
+        <td>Centre of mass</td>
+        <td>It is that point where the entire mass of the systemis imagined to be concentrated ,for consideration of its translational motion</td>
+    </tr>
+    
+    <tr>
+    <td>Poistion vector of centre of mass</td>
+      <td>R<sub>cm</sub>=Σ
+       <math>
+            <mfrac>
+             <mn>r<sub>i</sub>M<sub>i</sub></mn>
+             <mn>ΣM<sub>i</sub></mn>
+            </mfrac>
+          </math>
+            where r<sub>i</sub> is the coordinate of element i and M<sub>i</sub> is mass of element i
+        </td>
+    </tr>
+    
+    <tr>
+    <td>In coordinate system</td>
+    <td>X<sub>cm</sub>=Σ
+        <math>
+        <mfrac>
+            <mn>X<sub>i</sub>M<sub>i</sub></mn>
+            <mn>ΣM<sub>i</sub></mn>
+            </mfrac>
+        </math><br>
+        
+        Y<sub>cm</sub>=Σ
+        <math>
+        <mfrac>
+            <mn>Y<sub>i</sub>M<sub>i</sub></mn>
+            <mn>ΣM<sub>i</sub></mn>
+            </mfrac>
+        </math><br>
+            
+            Z<sub>cm</sub>=Σ
+        <math>
+        <mfrac>
+            <mn>Z<sub>i</sub>M<sub>i</sub></mn>
+            <mn>ΣM<sub>i</sub></mn>
+            </mfrac>
+        </math><br>
+            </td>
+    </tr>
+    
+    <tr>
+    <td>Velocity of CM</td>
+    <td>V<sub>CM</sub>=Σ
+        <math>
+        <mfrac>
+            <mn>V<sub>i</sub>M<sub>i</sub></mn>
+            <mn>ΣM<sub>i</sub></mn>
+            </mfrac>
+        </math><br>
+        The total momentum of a  system of particles is equal the total mass times the velocity of the centre of mass
+        </td>
+    </tr>
+    
+    <tr>
+    <td>Force</td>
+        <td>When Newton's second law of motion is applied to the system of particles we find F<sub>tα</sub>=Ma<sub>CM</sub> with a<sub>CM</sub>=d<sup>2</sup>R<sub>CM</sub>/dt<sup>2</sup></br>
+    Thus centre of mass of the system mves as if all the mass of the system were concentrated at the centre of mass and external force were applied to that point.</td>
+    </tr>
+    
+    <tr>
+    <td>Momentum conservation in COM motion</td><td>P=MV<sub>CM</sub> which means that total linear momentum of system of particles is equal to the product of total mass of the system and the velocity of its centre of mass</td></tr>
+    </table>
+
+
+<h1>Rigid body dynamics</h1>
+<table>
+    <tr>
+    <td>Term</td>
+        <td>Description</td>
+    </tr>
+    
+    
+<tr>
+<td>Angular Displacement </td>
+    <td>When a rigid body rotates about a fixed axis, the angular displacement is the angle Δϴ swept out by a line passing through any point on the body and intersecting the axis of rotation perpendicularly</br>
+    It can be positive(counter clockwise) or negative(clockwise).</br>
+    Analogous to a component of the displacement vector.</br>
+    SI Unit: radian(rad). other units:degree,revolution
+    </td>
+</tr>
+
+<tr>
+<td>Angular velocity</td>
+    <td>Average angular velocity, is equal to Δϴ/Δt. </br>
+    Instantaneous Angular Velocity ω=dϴ/dt.</br>
+Angular velocity can be positive or negative</br></td>
+</tr>
+    </table>
+
+<h1>Elasticity</h1>
+<table>
+    
+<tr>
+    <td>Term</td>
+    <td>Description</td>
+    </tr>
+    
+<tr>
+    <td>Elasticity</td>
+    <td>The ability of a body to regain its original shape and size when deforming force is withdrawn</td>
+    </tr>
+    
+<tr>
+    <td>Stress</td>
+    <td>Stress=
+    <math>
+        <mfrac>
+        <mn>F</mn>
+            <mn>A</mn>
+        </mfrac></math>
+        where F is applied force and A is area over which it acts.
+    </td></tr>
+    
+    <tr>
+        <td>Strain</td>
+        <td>It is the ratio of the change in size or shape to the original size or shape.</br>
+    Longitudinal strain=
+    <math>
+    <mfrac>
+        <mn>ΔI</mn>
+        <mn>I</mn></mfrac></math></br>
+ Volume strain=
+    <math>
+    <mfrac>
+        <mn>ΔV</mn>
+        <mn>V</mn></mfrac></math></br>
+and shear strain is due to change in shape of the body
+    </td>
+    </tr>
+
+
+<tr><td>Hook's law</td>
+<td>Hook's law is the fundamental law of elasticity and is stated as "for small defrmations stress is proportional to strain"</br>
+<math>
+<mfrac>
+    <mn>stress</mn>
+    <mn>strain</mn>
+    </mfrac>
+</math>
+=constant </br>
+This constant is knows as modulas of elasticity of a given material
+</td>
+</tr>
+
+<tr>
+<td>Elastic Modulus</td>
+    <td><table><tr>
+<td>Young's Modulus of elasticity</td>
+        <td>
+        Y =
+            <math><mfrac>
+                <mn>FI</mn>
+                <mn>AΔI</mn>
+                </mfrac> </math>
+        </td></tr>
+        
+        <tr>
+        <td>Bulk MOdulas of Elasticity</td>
+        <td>K = -
+            <math>
+            <mfrac>
+                <mn>VΔP</mn>
+                <mn>ΔV</mn>
+                </mfrac>
+            </math>
+            </td></tr>
+        
+        <tr>
+            <td>Modulas of Rigidity</td>
+            <td>η =
+            <math>
+                <mfrac>
+                <mn>F</mn>
+                    <mn>Aθ</mn>
+                </mfrac>
+                </math>
+            </td>
+        </tr>
+        
+        </table></td>        
+</tr>
+
+<tr>
+<td>Poisson's Ratio</td>
+    <td>THe ratio of lateral strain to teh longitudinal strain is called Poisson's ratio which is constant for material of that body.</br>
+    σ = 
+   <math>
+  <mfrac>
+    <mn>IΔD</mn>
+    <mn>DΔI</mn>
+    </mfrac>
+</math>
+</td>
+</tr>
+
+<tr>
+<td>Strain energy</td>
+<td>Energy stored per unit volume is a strained wire is E = 1/2(stress)x(strain)</td></tr>
+
+</table>
+    </body>
+</html>

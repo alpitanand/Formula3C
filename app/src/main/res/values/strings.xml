@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Formula2</string>
+    <string name="open">Open</string>
+    <string name="Close">Close</string>
+    <string name="alpit">alpit</string>
+    <string name="title_activity_law_of_motion">law_of_motion</string>
+    <string name="laws_of_motion">Laws of motion</string>
+    <string name="Kinematics">Kinematics</string>
+    <string name="Gravitation">Gravitation</string>
+    <string name="Mechanics">Mechanics</string>
+    <string name="Hydrodynamics">Hydrodynamics and Hydrostatics</string>
+    <string name="SHM">shm</string>
+    <string name="Interference">Interference</string>
+    <string name="Electromagneticwaves">Electromagneticwaves</string>
+    <string name="Modern">Modern</string>
+    <string name="ModernPhysics">Modern Physics</string>
+    <string name="Thermalexpansion">Thermal expansion</string>
+    <string name="Thermodynamics">Thermodynamics</string>
+</resources>

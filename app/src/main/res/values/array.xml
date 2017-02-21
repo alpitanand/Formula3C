@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Title_array">
+        <item>Maths Blog</item>
+        <item>Physics World</item>
+        <item>Chemistry Properties</item>
+        <item>E n E Reading Room</item>
+        <item>Unit Conversion</item>
+        <item>Scientist Encyclopedia</item>
+
+
+    </string-array>
+
+    <array name="Title_image">
+        <item>@drawable/mathsbg</item>
+        <item>@drawable/physicsbg</item>
+        <item>@drawable/chemistrybg</item>
+        <item>@drawable/electricalbg</item>
+        <item>@drawable/unitconversionbg</item>
+        <item>@drawable/scientistbg</item>
+
+    </array>
+
+</resources>
