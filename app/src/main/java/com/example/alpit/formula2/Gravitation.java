@@ -39,6 +39,8 @@ public class Gravitation extends AppCompatActivity {
         gwebView.getSettings().setJavaScriptEnabled(true);
         gwebView.getSettings().setBuiltInZoomControls(true);
         gwebView.loadUrl("file:///android_asset/mathscribe/gravitation.html");
+
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

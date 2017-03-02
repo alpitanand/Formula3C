@@ -29,7 +29,8 @@
         <activity android:name=".Electromagneticwaves" />
         <activity android:name=".Modernphysics" />
         <activity android:name=".Thermalexpansion" />
-        <activity android:name=".Thermodynamics"></activity>
+        <activity android:name=".Thermodynamics" />
+        <activity android:name=".FavoritePage"></activity>
     </application>
 
 </manifest>

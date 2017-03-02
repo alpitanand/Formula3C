@@ -16,4 +16,5 @@
     <string name="ModernPhysics">Modern Physics</string>
     <string name="Thermalexpansion">Thermal expansion</string>
     <string name="Thermodynamics">Thermodynamics</string>
+    <string name="noadd">Nothing added</string>
 </resources>
