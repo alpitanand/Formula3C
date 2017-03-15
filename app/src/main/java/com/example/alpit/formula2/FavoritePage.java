@@ -24,6 +24,7 @@ public class FavoritePage extends AppCompatActivity implements OnItemClickListen
         lv.setOnItemClickListener(this);
         ArrayAdapter<String> arr2 = new ArrayAdapter<String>(getApplicationContext(), R.layout.simple_colum, db.getalllist());
         lv.setAdapter(arr2);
+        lv.setDivider(null);
 
     }
     @Override

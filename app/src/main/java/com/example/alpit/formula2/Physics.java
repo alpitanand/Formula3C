@@ -1,10 +1,10 @@
 package com.example.alpit.formula2;
 
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -24,9 +24,9 @@ private DrawerLayout mpDrawerLayout;
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view1);
         aToggle = new ActionBarDrawerToggle(this, mpDrawerLayout, R.string.open, R.string.Close);
         mpDrawerLayout.addDrawerListener(aToggle);
+
         toolbar = (Toolbar) findViewById(R.id.nav_action1);
         setSupportActionBar(toolbar);
-
         recyclerView = (RecyclerView) findViewById(R.id.recycler);
         physics_recycler = new Physics_recycler(getApplicationContext());
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);

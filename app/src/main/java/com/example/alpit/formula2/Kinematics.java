@@ -16,10 +16,10 @@ import android.webkit.WebView;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 
 public class Kinematics extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, CompoundButton.OnCheckedChangeListener {
+    public DataBaseHandler db;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle phy_law_toggel;
@@ -28,8 +28,7 @@ public class Kinematics extends AppCompatActivity implements NavigationView.OnNa
     private FloatingActionButton floatingActionButton;
     private RelativeLayout relativeLayout;
     private CheckBox checkBox;
-    public DataBaseHandler db;
-int c=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +61,7 @@ int c=0;
             }
         });
         navigationView.setNavigationItemSelectedListener(this);
-      db = new DataBaseHandler(this);
+        db = new DataBaseHandler(this);
 
 
     }
@@ -96,6 +95,7 @@ int c=0;
 
             saveInSp("checkbox", check1);
             db.del_activity(this.getClass().getSimpleName());
+
         }
 
     }

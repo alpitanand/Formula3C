@@ -30,7 +30,12 @@
         <activity android:name=".Modernphysics" />
         <activity android:name=".Thermalexpansion" />
         <activity android:name=".Thermodynamics" />
-        <activity android:name=".FavoritePage"></activity>
+        <activity android:name=".FavoritePage" />
+        <activity android:name=".Unitconversion" />
+        <activity android:name=".Triangle" />
+        <activity android:name=".Change" />
+        <activity android:name=".Distance" />
+        <activity android:name=".Mass"></activity>
     </application>
 
 </manifest>

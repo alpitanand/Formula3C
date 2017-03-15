@@ -31,7 +31,7 @@
     <item
         android:id="@+id/unitconversion"
         android:icon="@drawable/unitconversion"
-        android:title="Unit Conversion" />
+        android:title="Cheat tools" />
         <item
             android:id="@+id/Scientist"
             android:icon="@drawable/scientist"

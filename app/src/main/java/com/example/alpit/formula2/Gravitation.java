@@ -1,23 +1,32 @@
 package com.example.alpit.formula2;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
-public class Gravitation extends AppCompatActivity {
+public class Gravitation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, CompoundButton.OnCheckedChangeListener {
 
     private DrawerLayout gdrawerLayout;
     private NavigationView gnavigationView;
     private ActionBarDrawerToggle gravity_law_toggel;
     private Toolbar gtoolbar;
     private WebView gwebView;
+    private DataBaseHandler db;
+    private CheckBox checkBox;
+    private FloatingActionButton floatingActionButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +48,18 @@ public class Gravitation extends AppCompatActivity {
         gwebView.getSettings().setJavaScriptEnabled(true);
         gwebView.getSettings().setBuiltInZoomControls(true);
         gwebView.loadUrl("file:///android_asset/mathscribe/gravitation.html");
-
+        db = new DataBaseHandler(this);
+        checkBox = (CheckBox) findViewById(R.id.fav);
+        checkBox.setChecked(getAsp("checkbox1"));
+        checkBox.setOnCheckedChangeListener(this);
+        gnavigationView.setNavigationItemSelectedListener(this);
+        floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gwebView.scrollTo(0, 0);
+            }
+        });
 
     }
     @Override
@@ -48,5 +68,42 @@ public class Gravitation extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.favourite) {
+            startActivity(new Intent(getApplicationContext(), FavoritePage.class));
+        }
+        gdrawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean check1) {
+        if (checkBox.isChecked()) {
+
+            saveInSp("checkbox1", check1);
+            db.add_activity(this.getClass().getSimpleName());
+        } else if (!checkBox.isChecked()) {
+
+            saveInSp("checkbox1", check1);
+            db.del_activity(this.getClass().getSimpleName());
+
+        }
+
+    }
+
+    private boolean getAsp(String key) {
+        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("ALpit", android.content.Context.MODE_PRIVATE);
+        return sharedPreferences.getBoolean(key, false);
+    }
+
+    private void saveInSp(String key, boolean value) {
+        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("ALpit", android.content.Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(key, value);
+        editor.apply();
     }
 }

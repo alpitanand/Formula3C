@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit_name">
+        <item>Triangle</item>
+        <item>Square</item>
+        <item>Sphere</item>
+        <item>Circle</item>
+        <item>Cube</item>
+        <item>Unit Conversion</item>
+    </string-array>
+
+    <string-array name="unit_descrip">
+        <item>Area,perimeter,volume</item>
+        <item>Area,perimeter,volume</item>
+        <item>Area,perimeter,volume</item>
+        <item>Area,perimeter,volume</item>
+        <item>Area,perimeter,volume</item>
+        <item>Everything to everything</item>
+    </string-array>
+    <array name="unit_icon">
+        <item>@drawable/tri</item>
+        <item>@drawable/square</item>
+        <item>@drawable/sphere</item>
+        <item>@drawable/circle</item>
+        <item>@drawable/cube</item>
+        <item>@drawable/recycling</item>
+    </array>
+
+</resources>

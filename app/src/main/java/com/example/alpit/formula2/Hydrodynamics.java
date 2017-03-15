@@ -1,20 +1,23 @@
 package com.example.alpit.formula2;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.widget.CompoundButton;
 
-public class Hydrodynamics extends AppCompatActivity {
+public class Hydrodynamics extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, CompoundButton.OnCheckedChangeListener {
     private DrawerLayout gdrawerLayout;
     private NavigationView gnavigationView;
     private ActionBarDrawerToggle gravity_law_toggel;
     private Toolbar gtoolbar;
     private WebView gwebView;
+    private DataBaseHandler db;
 
 
     @Override
@@ -37,6 +40,8 @@ public class Hydrodynamics extends AppCompatActivity {
         gwebView.getSettings().setJavaScriptEnabled(true);
         gwebView.getSettings().setBuiltInZoomControls(true);
         gwebView.loadUrl("file:///android_asset/mathscribe/Hydrodynamics.html");
+        gnavigationView.setNavigationItemSelectedListener(this);
+        db = new DataBaseHandler(this);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -44,6 +49,20 @@ public class Hydrodynamics extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.favourite) {
+            startActivity(new Intent(getApplicationContext(), FavoritePage.class));
+        }
+        return false;
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
     }
 }
 

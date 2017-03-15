@@ -1,16 +1,16 @@
 package com.example.alpit.formula2;
 
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private DrawerLayout mDrawerLayout;
@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 if(id==R.id.favourite)
                 {
                   startActivity(new Intent(getApplicationContext(),FavoritePage.class));
+                } else if (id == R.id.unitconversion) {
+                    startActivity(new Intent(getApplicationContext(), Unitconversion.class));
                 }
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
