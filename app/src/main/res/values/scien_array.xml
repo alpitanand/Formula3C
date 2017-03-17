@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sci_name">
+        <item>Albert Einstein</item>
+        <item>Isaac Newton</item>
+        <item>Galileo Galilei </item>
+        <item>Charles Darwin</item>
+        <item>Nikola Tesla</item>
+        <item>Marie Curie</item>
+        <item>Louis Pasture</item>
+        <item>Michael Faraday</item>
+        <item>Niels Bohr</item>
+        <item>C.V Raman</item>
+
+    </string-array>
+
+
+    <string-array name="sci_descript">
+        <item> He developed the theory of relativity, one of the two pillars of modern physics. </item>
+        <item>English mathematician, astronomer, and physicist</item>
+        <item>astronomer, physicist, engineer, philosopher, and mathematician.</item>
+        <item> English naturalist, geologist and biologist</item>
+        <item>Serbian-American inventor, electrical engineer, mechanical engineer, physicist, and futurist</item>
+        <item> Polish and naturalized-French physicist and chemist</item>
+        <item>French biologist microbiologist and chemist </item>
+        <item>English scientist who contributed to the study of electromagnetism and electrochemistry</item>
+        <item>Danish physicist who made foundational contributions to understanding atomic structure and quantum theory</item>
+        <item> Indian physicist born in the former Madras Province in India</item>
+
+    </string-array>
+
+    <array name="sci_image">
+        <item>@drawable/albert</item>
+        <item>@drawable/newton</item>
+        <item>@drawable/galilio</item>
+        <item>@drawable/darwin</item>
+        <item>@drawable/tesla</item>
+        <item>@drawable/curie</item>
+        <item>@drawable/pasture</item>
+        <item>@drawable/farady</item>
+        <item>@drawable/bohr</item>
+        <item>@drawable/raman</item>
+
+
+    </array>
+
+
+</resources>

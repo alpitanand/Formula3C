@@ -35,7 +35,18 @@
         <activity android:name=".Triangle" />
         <activity android:name=".Change" />
         <activity android:name=".Distance" />
-        <activity android:name=".Mass"></activity>
+        <activity android:name=".Mass" />
+        <activity android:name=".Scientist" />
+        <activity android:name=".Einstine" />
+        <activity android:name=".Newton" />
+        <activity android:name=".galelio" />
+        <activity android:name=".cdarwin" />
+        <activity android:name=".Ntesla" />
+        <activity android:name=".Curie" />
+        <activity android:name=".Pasture" />
+        <activity android:name=".Farady" />
+        <activity android:name=".Bohr" />
+        <activity android:name=".Raman"></activity>
     </application>
 
 </manifest>
