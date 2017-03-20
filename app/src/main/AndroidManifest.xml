@@ -29,7 +29,28 @@
         <activity android:name=".Electromagneticwaves" />
         <activity android:name=".Modernphysics" />
         <activity android:name=".Thermalexpansion" />
-        <activity android:name=".Thermodynamics"></activity>
+        <activity android:name=".Thermodynamics" />
+        <activity android:name=".FavoritePage" />
+        <activity
+            android:name=".Unitconversion"
+            android:label="@string/title_activity_unitconversion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Triangle" />
+        <activity android:name=".Square" />
+        <activity android:name=".Rectangular" />
+        <activity android:name=".Circle" />
+        <activity android:name=".Ellipse" />
+        <activity android:name=".Rhombus" />
+        <activity android:name=".Parallelogram" />
+        <activity android:name=".Trapezoid" />
+        <activity android:name=".Regularpolygon" />
+        <activity android:name=".Change" />
+        <activity android:name=".Cube" />
+        <activity android:name=".Cone" />
+        <activity android:name=".Sphere" />
+        <activity android:name=".Frustum" />
+        <activity android:name=".Cylinder" />
+        <activity android:name=".Cubeoid"></activity>
     </application>
 
 </manifest>

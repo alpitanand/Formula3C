@@ -62,6 +62,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
                     if (getAdapterPosition() == 1) {
                         itemView.getContext().startActivity(new Intent(itemView.getContext(), Physics.class));
                     }
+                    if(getAdapterPosition()==4)
+                    {
+                        itemView.getContext().startActivity(new Intent(itemView.getContext(), Unitconversion.class));
+                    }
                 }
             });
             tx_title = (TextView) itemView.findViewById(R.id.title);

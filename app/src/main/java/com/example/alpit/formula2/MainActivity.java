@@ -1,6 +1,8 @@
 package com.example.alpit.formula2;
 
+import android.content.Intent;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +11,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle aToggle;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout=(DrawerLayout)findViewById(R.id.drawer);
         aToggle=new ActionBarDrawerToggle(this,mDrawerLayout,R.drawable.navig,R.string.open,R.string.Close);
         NavigationView navigationView=(NavigationView)findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
         mDrawerLayout.addDrawerListener(aToggle);
         toolbar=(Toolbar)findViewById(R.id.nav_action);
         toolbar.setNavigationIcon(R.drawable.navig);
@@ -44,5 +47,16 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
 
-    }}
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id=item.getItemId();
+                if(id==R.id.favourite)
+                {
+                  startActivity(new Intent(getApplicationContext(),FavoritePage.class));
+                }
+        mDrawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+}

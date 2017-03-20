@@ -16,4 +16,24 @@
     <string name="ModernPhysics">Modern Physics</string>
     <string name="Thermalexpansion">Thermal expansion</string>
     <string name="Thermodynamics">Thermodynamics</string>
+    <string name="noadd">Nothing added</string>
+    <string name="title_activity_unitconversion">Unitconversion</string>
+    <string name="Triangle">Triangle</string>
+    <string name="Square">Square</string>
+    <string name="Rectangle">Rectangle</string>
+    <string name="title_activity_circle">Circle</string>
+    <string name="Circle">Circle</string>
+    <string name="Rhombus">Rhombus</string>
+    <string name="Parallelogram">Parallelogram</string>
+    <string name="title_activity_trapezoid">Trapezoid</string>
+    <string name="Trapezoid">Trapezoid</string>
+    <string name="Regularpolygon">Regular polygon</string>
+    <string name="Cheattools">Cheat tools</string>
+    <string name="Cube">Cube</string>
+    <string name="Cone">Cone</string>
+    <string name="Sphere">Sphere</string>
+    <string name="Frustum">Frustum</string>
+    <string name="Cylinder">Cylinder</string>
+    <string name="Cubeoid">Cubeoid</string>
+
 </resources>
