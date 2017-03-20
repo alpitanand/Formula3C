@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Chemarr">
+        <item>Basic Concepts</item>
+        <item>Structure of Atom</item>
+        <item>State of matter</item>
+        <item>Thermodynamics</item>
+        <item>Equilibrium </item>
+        <item>Solid state</item>
+        <item>Solutions</item>
+        <item>Electrochemistry </item>
+        <item>Kinetics and Nuclear</item>
+        <item>Organic chem</item>
+    </string-array>
+    <string-array name="Chemarr_des">
+        <item>Molarity,Molality</item>
+        <item>All formulas of of structure of atoms</item>
+        <item>Boyle\'s law,Charles Law etc</item>
+        <item>Energy exchange,Enthalpy </item>
+        <item>Equilibrium constant,Concentration quotient  </item>
+        <item>Packing fraction</item>
+        <item>Henry law,Osmotic pressure etc</item>
+        <item>Ohms law,Cell constant etc </item>
+        <item>Rate of reactions</item>
+        <item>All popular formula of organic chemistry</item>
+    </string-array>
+    <array name="chem_image">
+        <item>@drawable/basic</item>
+        <item>@drawable/atom</item>
+        <item>@drawable/matter</item>
+        <item>@drawable/thermo</item>
+        <item>@drawable/equlibrium</item>
+        <item>@drawable/solid</item>
+        <item>@drawable/solutions</item>
+        <item>@drawable/electro</item>
+        <item>@drawable/nuclear</item>
+        <item>@drawable/organic</item>
+
+    </array>
+
+
+</resources>

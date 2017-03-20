@@ -68,6 +68,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
                     if (getAdapterPosition() == 5) {
                         itemView.getContext().startActivity(new Intent(itemView.getContext(), Scientist.class));
                     }
+                    if (getAdapterPosition() == 2) {
+                        itemView.getContext().startActivity(new Intent(itemView.getContext(), Chemistry.class));
+                    }
                 }
             });
             tx_title = (TextView) itemView.findViewById(R.id.title);

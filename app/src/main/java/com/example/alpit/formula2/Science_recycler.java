@@ -56,8 +56,8 @@ public class Science_recycler extends RecyclerView.Adapter<Science_recycler.Scie
     }
 
     public class ScienceView extends RecyclerView.ViewHolder {
-        public TextView tx_sci, tx_scides;
-        public ImageView img_sci;
+        private TextView tx_sci, tx_scides;
+        private ImageView img_sci;
 
         public ScienceView(final View itemView) {
             super(itemView);

@@ -59,7 +59,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     startActivity(new Intent(getApplicationContext(), Unitconversion.class));
                 } else if (id == R.id.Scientist) {
                     startActivity(new Intent(getApplicationContext(), Scientist.class));
+                } else if (id == R.id.nav_chem) {
+                    startActivity(new Intent(getApplicationContext(), Chemistry.class));
                 }
+
 
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;

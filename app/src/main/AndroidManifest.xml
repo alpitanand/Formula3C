@@ -46,7 +46,9 @@
         <activity android:name=".Pasture" />
         <activity android:name=".Farady" />
         <activity android:name=".Bohr" />
-        <activity android:name=".Raman"></activity>
+        <activity android:name=".Raman" />
+        <activity android:name=".Chemistry" />
+        <activity android:name=".Basic_activity"></activity>
     </application>
 
 </manifest>
